@@ -5,9 +5,19 @@
     padding-top: 5rem;
 }
 
+.container {
+    margin: 0rem;
+    padding: 0rem;
+}
+
 .intro-section {
     padding-top: 5rem;
     background-color: #caffbf;
+}
+
+.intro-section-p {
+    padding: 6rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -19,8 +29,6 @@ h1 {
 .top-right-img {
     height: 20rem;
     width: 26rem;
-    box-shadow: 0px 10px 40px rgba(59, 51, 51, 0.5);
-    border-radius: 10px;
     padding: 2rem;
     margin-left: 36rem;
     border-radius: 3rem;
@@ -167,40 +175,10 @@ header p {
     margin-bottom: 40px;
 }
 
-#intro {
-    background-image: url(../img/wallpaper.webp);
-    background-position: center;
-    background-size: contain;
-    padding-top: 5rem;
-}
-
-.intro-section {
-    padding-top: 5rem;
-    background-color: #caffbf;
-}
-
 h1 {
     margin-top: 2rem;
     color: #fdffb6;
     text-align: center;
-}
-
-.top-right-img {
-    height: 20rem;
-    width: 26rem;
-    box-shadow: 0px 10px 40px rgba(59, 51, 51, 0.5);
-    border-radius: 10px;
-    padding: 2rem;
-    margin: 0rem auto;
-    border-radius: 3rem;
-}
-
-.top-img {
-    padding: 1rem;
-    height: 15rem;
-    width: 18rem;
-    box-shadow: 0px 10px 40px rgba(59, 51, 51, 0.5);
-    border-radius: 20px;
 }
 
 .campus-p {
@@ -221,6 +199,13 @@ section {
     padding: 2rem 0.5rem;
     background-color: white;
     box-shadow: 0px 10px 40px rgba(208, 246, 255, 0.5);
+    border-radius: 20px;
+}
+
+.text-top {
+    margin: 0rem 15rem;
+    background: linear-gradient(to right, #cfe6fa, #cecede, #fffafa);
+    box-shadow: 0px 10px 40px rgb(215, 218, 249);
     border-radius: 20px;
 }
 
@@ -323,15 +308,105 @@ header p {
     border-radius: 10px;
 }
 
+.image-logo {
+    box-shadow: 0px 10px 40px rgba(59, 51, 51, 0.5);
+    border-radius: 10px;
+    margin-left: 36rem;
+}
+
+.facilities {
+    padding: 3rem;
+    background-color: white;
+    box-shadow: 0px 10px 40px rgb(215, 218, 249);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 20px;
+}
+
+.second-logo {
+    margin-left: 10rem;
+    box-shadow: 0px 10px 40px rgba(59, 51, 51, 0.5);
+    border-radius: 10px;
+    height: 10rem;
+    width: 13rem;
+}
+
+.intro-section-h4 {
+    padding-left: 7rem;
+}
+
+.intro-section-h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-left: 5rem;
+    color: black;
+}
+
 
 /* Responsive adjustments */
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .intro-section-h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: left;
+        margin-left: 1rem;
+        color: black;
+    }
+    .intro-section-h4 {
+        padding-left: 1rem;
+        padding-bottom: 3rem;
+    }
+    .second-logo {
+        visibility: hidden;
+        margin-left: 2rem;
+        box-shadow: 0px 10px 40px rgba(59, 51, 51, 0.5);
+        border-radius: 10px;
+        height: 3rem;
+        width: 5rem;
+    }
+    .image-logo {
+        box-shadow: 0px 10px 40px rgba(59, 51, 51, 0.5);
+        border-radius: 10px;
+        margin-left: 0rem;
+        height: 12rem;
+        width: 4rem;
+    }
+    .intro-section {
+        padding-top: 1rem;
+        background-color: #caffbf;
+    }
+    .intro-section-p {
+        background-color: #cfe6fa;
+        padding: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .teacher-image {
+        height: 10rem;
+        width: 15rem
+    }
+    .players {
+        padding: 1rem;
+        margin-left: 0rem;
+        height: 10rem;
+        width: 10rem;
+    }
+    .text-top {
+        margin-top: 150px;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-radius: 20px;
+    }
     .highlighted-text {
         font-size: 2rem;
     }
     .top-right-img {
-        margin-left: 0rem;
+        padding: 0rem;
+        margin: 0rem;
+        height: 10rem;
+        width: 100%;
+        padding-left: 0rem;
     }
     header h1 {
         font-size: 1.5rem;
@@ -380,8 +455,5 @@ header p {
     .header-image {
         height: auto;
         width: 100%;
-    }
-    .top-right-img {
-        margin-left: 10rem;
     }
 }
